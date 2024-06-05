@@ -3,71 +3,38 @@
     padding: 0;
 }
 
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    box sizing: border-box;
+/* Dev */
+header,
+header * {
+    outline: 1px lightpink;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 20px;
-    background-color:lightpink;
-    color:pink
-}
+/* Dep */
+header,
+header * {
+    width: 100%;
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    flex-direction: row;
+    & nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
 
-}
-header nav ul li a {
-    color:black;
-    text-decoration: none;
-    flex-direction: row;
-}
+        & h1 {
+            font-size: xx-large;
+        }
 
-.hero {
-    display: flex;
-    align-content: center;
-    background-color:pink;
-    color:black;
-    padding: 40px 20px;
-}
+        & button {
+            border: none;
+            background: none;
+            font-size: medium;
+            font-weight: 600;
+            color: rgb(82, 82,82);
+            transition: .3s ease-in-out;
 
-.hero-text{
-    flex: 1;
-    padding:5%;
-}
-
-.hero-text h1 {
-    font-size: 3em;
-    margin: 0;
-
-}
-
-.hero-text p{
-    font-size: 2em;
-}
-
-.hero-text a{
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: black;
-    color: pink;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.features{
-    display: flex;
-    justify-content: space-around;
-    background-color:lightpink;
-    padding: 40px 20px;
+       &:hover {
+        color: rgb(241, 123, 202);
+       }
+        }
+    }
 }
